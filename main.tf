@@ -21,3 +21,9 @@ resource "azurerm_resource_group" "vikas_RG2" {
   name = "vikas_RG2"
   location = "West Europe"
 }
+
+resource "azurerm_resource_group" "vikas_RG3" {
+
+  name = "vikas_RG3"
+  location = "West Europe"
+}
