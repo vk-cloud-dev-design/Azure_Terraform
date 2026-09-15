@@ -1,0 +1,31 @@
+# Terraform
+2
+.terraform/
+3
+*.tfstate
+4
+*.tfstate.*
+5
+crash.log
+6
+ 
+7
+# Variable files
+8
+*.tfvars
+9
+ 
+10
+# IDE
+11
+.vscode/
+12
+.idea/
+13
+ 
+14
+# OS
+15
+Thumbs.db
+16
+.DS_Store
