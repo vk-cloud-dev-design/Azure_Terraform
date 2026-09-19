@@ -13,7 +13,7 @@ jobs:
   test-azure-auth:
     name: Validate Azure Connection & Terraform
     runs-on: ubuntu-latest
-    environment: Dev Environment # Must match your GitHub Environment name exactly
+    #environment: Dev Environment # Must match your GitHub Environment name exactly
 
     steps:
       - name: Checkout Repository
