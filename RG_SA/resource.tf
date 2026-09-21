@@ -1,10 +1,10 @@
 resource "azurerm_resource_group" "vikas_RG_SA" {
-  name     = "vikas_storage_RG"
+  name     = "vikas_storage_RG01"
   location = "centralindia"
 }
 
 resource "azurerm_storage_account" "vikas_SA" {
-  name                     = "vikassamain008"
+  name                     = "vikassamainsa001"
   resource_group_name      = azurerm_resource_group.vikas_RG_SA.name
   location                 = azurerm_resource_group.vikas_RG_SA.location
   account_tier             = "Standard"
@@ -16,19 +16,19 @@ resource "azurerm_storage_account" "vikas_SA" {
 }
 
 resource "azurerm_storage_container" "vikas_container" {
-  name                  = "billu420"
+  name                  = "dev-terra-backend"
   storage_account_id    = azurerm_storage_account.vikas_SA.id
   container_access_type = "container"
 }
 
-resource "azurerm_storage_container" "vikas_container01" {
-  name                  = "billudon420"
-  storage_account_id    = azurerm_storage_account.vikas_SA.id
-  container_access_type = "blob"
-}
+# resource "azurerm_storage_container" "vikas_container01" {
+# name                  = "prod-terra-backend"
+# storage_account_id    = azurerm_storage_account.vikas_SA.id
+# container_access_type = "blob"
+# }
 
-resource "azurerm_storage_container" "vikas_container02" {
-  name                  = "statecontainer"
-  storage_account_id    = azurerm_storage_account.vikas_SA.id
-  container_access_type = "private"
-}
+# resource "azurerm_storage_container" "vikas_container02" {
+# name                  = "test-terra-backend"
+# storage_account_id    = azurerm_storage_account.vikas_SA.id
+# container_access_type = "private"
+# }
