@@ -1,4 +1,4 @@
-resource "azurerm_resource_group" "_001" {
+resource "azurerm_resource_group" "vikas_RG_old_001" {
  name    =  "vikas_storage_world_new"  
  location = "West US"
 }
