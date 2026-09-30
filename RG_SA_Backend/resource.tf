@@ -4,6 +4,6 @@ resource "azurerm_resource_group" "vikas_RG_old_001" {
 }
 
 resource "azurerm_resource_group" "vikas_RG_old_002" {
- name    =  "vikas_storage_world_new"  
+ name    =  "vikas_storage_world"  
  location = "East US"
 }
